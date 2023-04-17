@@ -13,47 +13,63 @@
 
 
 <div class="formDiv">
+
   <form [formGroup]="login_payload" (ngSubmit)="regiser_and_login()">
-    <div class="mb-3">
-      <label for="userName" class="form-label">User Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="userName"
-        placeholder="enter user name"
-        name="userName"
-        formControlName="userName"
-      />
-      
-    </div>
 
-    <div class="mb-3">
-      <label for="pwd" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="pwd"
-        placeholder="enter password"
-        name="passWord"
-        formControlName="passWord"
-      />
-      <span *ngIf="login_payload.get('passWord')">
-        Password is required.
-      </span>
-    </div>
-    <br />
-    <button
-      type="submit"
-      class="btn btn-primary form-control"
-      [disabled]="login_payload.invalid"
-    >
-      Register
-    </button>
-    <br />
-    <br />
+            <div style="text-align: center;">
+              <h2>Sign Up here</h2>
+            </div>
+          <br>
+            <div class="mb-3">
+                        <label for="userName" class="form-label">User Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="userName"
+                          placeholder="enter user name"
+                          name="userName"
+                          formControlName="userName"
+                        />
+            </div>
+
+            <div class="mb-3">
+
+              <label for="pwd" class="form-label">Password</label>
+
+              <input
+                type="password"
+                class="form-control"
+                id="pwd"
+                placeholder="enter password"
+                name="passWord"
+                formControlName="passWord"
+              />
+
+
+              <span *ngIf="login_payload.get('passWord')">
+                Password is required.
+              </span>
+          </div>
+
+
+
+
+          <br />
+
+          <button
+            type="submit"
+            class="btn btn-primary form-control"
+            [disabled]="login_payload.invalid"
+          >
+            Register
+          </button>
+
+          <br />
+          <br />
+
   </form>
-</div>
 
+</div>
 
 
 
