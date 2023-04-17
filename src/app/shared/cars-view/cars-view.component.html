@@ -1,0 +1,29 @@
+<div class="row table-responsive p-4">
+  <table class="col-12 table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Location</th>
+        <th>Temperature</th>
+        <th>Atmospheric Pressure</th>
+        <th>Humidity</th>
+        <th>Precipitation</th>
+        <th>Solar Radiation</th>
+        <th>Wind</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let user of user_list; let i = index" >
+        <td>{{user.id}}</td>
+        <td>{{user.location}}</td>
+        <td>{{user.temperature}}</td>
+        <td>{{user.atmosphericPressure}}</td>
+        <td>{{user.humidity}}</td>
+        <td>{{user.precipitation}}</td>
+        <td>{{user.solarradiation}}</td>
+        <td>{{user.wind}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

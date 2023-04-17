@@ -1,0 +1,104 @@
+
+    
+    <form  class="row" [formGroup]="car_payload" (ngSubmit)="add_user_car()">
+      <div class="mb-3 col-6">
+        <label for="Id">ID</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Id"
+          placeholder="Enter ID"
+          name=""
+          formControlName="Id"
+        />
+      </div>
+      
+      <div class="mb-3 col-6">
+        <label for="Location">Location</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Location"
+          placeholder="Enter Location"
+          name=""
+          formControlName="Location"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="Temperature">Temperature</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Temperature"
+          placeholder="Enter Temperature"
+          name=""
+          formControlName="Temperature"
+        />
+      </div>
+  
+      <div class="mb-3 col-6">
+        <label for="Pressure">Atmospheric Pressure</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Pressure"
+          placeholder="Enter Atmospheric Pressure"
+          name=""
+          formControlName="Pressure"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="Humidity">Humidity</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Humidity"
+          placeholder="Enter Humidity"
+          name=""
+          formControlName="Humidity"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="Precipitation">Precipitation</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Precipitation"
+          placeholder="Enter Precipitation"
+          name=""
+          formControlName="Precipitation"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="Radiation">Solar Radiation</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Radiation"
+          placeholder="Enter Solar Radiation"
+          name=""
+          formControlName="Radiation"
+        />
+      </div>
+  
+      <div class="mb-3 col-6">
+        <label for="Wind">Wind</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Wind"
+          placeholder="Enter Wind"
+          name=""
+          formControlName="Wind"
+        />
+      </div>
+      <br />
+      <!-- <div class="col-3">
+        <button
+          type="button"
+          class="btn btn-primary"
+          [disabled]="car_payload.invalid" (click)="add_user_car()">
+          Add
+        </button>
+      </div> -->
+    </form>

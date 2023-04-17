@@ -1,0 +1,35 @@
+.formDiv{
+
+    /* margin: 20%; */
+
+    margin-top: 5%;
+
+    margin-bottom: 5%;
+
+    margin-left: 25%;
+
+    margin-right: 25%;
+
+    background-color:aliceblue;
+
+    padding: 5%;
+
+  }
+
+  span{
+
+    color: red;
+
+  }
+
+  footer{
+
+  background-color: rgb(207, 7, 160);
+
+  padding: 10px;
+
+  text-align: center;
+
+  color: white;
+
+  }

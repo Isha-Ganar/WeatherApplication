@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <!-- <a routerLink="/user" routerLinkActive="active">User</a>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>UserId</th>
+        <th>UserName</th>
+        <th>UserCar</th>
+        <th>UserAddress</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userlists">
+        <td>{{ user.UserId }}</td>
+        <td>{{ user.UserName }}</td>
+        <td>{{ user.UserCar }}</td>
+        <td>{{ user.UserAddress }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+  <div class="header">
+    <a href="#default" class="logo">Welcome To Weather Application </a>
+    <div class="header-right">
+      <a class="active" routerLink="/registration" routerLinkActive="active"
+        >Registration</a
+      >
+      <a routerLink="/admin" routerLinkActive="active">Admin</a>
+      <a routerLink="/user" routerLinkActive="active">User</a>
+      <a routerLink="/contactus" routerLinkActive="active">Contact</a>
+      <a routerLink="/aboutus" routerLinkActive="active">About</a>
+    </div>
+  </div>
+  <app-car-crud></app-car-crud>
+  <button type="button" class="btn btn-primary m-2" (click)="add_user_car()">
+    Add
+  </button>
+  <button type="button" class="btn btn-primary m-2" (click)="update_user_car()">
+    UPDATE
+  </button>
+  <button type="button" class="btn btn-danger m-2" (click)="delete_user_car()">
+    DELETE
+  </button>
+  <button type="button" class="btn btn-primary ml-2" (click)="get_all_user_car()">
+    GET ALL Weather Details
+  </button>
+  <app-cars-view [hidden]="!show_all_users"></app-cars-view>
+  <!-- <div>
+    <img src="/assets/car1.jpg" alt="CarWash" width="100%" height="100%" />
+    <div class="header"></div>
+  </div> -->
+  <footer class="footer" style="margin-top: 235px">
+    <p>
+      @Copyright Weather Application 2022 <br />
+        <a href="ishaganar15@gmail.com">ishaganar15@gmail.com</a>
+      </p>
+  </footer>
+</div>
